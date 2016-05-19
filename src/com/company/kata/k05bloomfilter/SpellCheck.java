@@ -1,13 +1,4 @@
-/*
-* Copyright Medtronic, Inc. 2014-2015
-*
-* MEDTRONIC CONFIDENTIAL - This document is the property of Medtronic,
-* Inc.,and must be accounted for. Information herein is confidential. Do
-* not reproduce it, reveal it to unauthorized persons, or send it outside
-* Medtronic without proper authorization.
-*/
-
-package com.company.kata05.bloomfilter;
+package com.company.kata.k05bloomfilter;
 
 import java.io.BufferedReader;
 import java.io.File;

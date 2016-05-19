@@ -1,4 +1,4 @@
-package com.company.kata04.datamunging;
+package com.company.kata.k04datamunging;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -6,14 +6,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/*
-* Copyright Medtronic, Inc. 2014-2015
-*
-* MEDTRONIC CONFIDENTIAL - This document is the property of Medtronic,
-* Inc.,and must be accounted for. Information herein is confidential. Do
-* not reproduce it, reveal it to unauthorized persons, or send it outside
-* Medtronic without proper authorization.
-*/
 public class FootballDataTest {
     FootballData data;
 
@@ -36,21 +28,21 @@ public class FootballDataTest {
 
     @Test
     public void testRowCounts() {
-        Assert.assertEquals(20, data.getRawData().size());
+        assertEquals(20, data.getRawData().size());
     }
 
     @Test
     public void testGetHeaders() throws Exception {
-        Assert.assertEquals("Team", data.getHeaders().get(1));
-        Assert.assertEquals("F", data.getHeaders().get(6));
-        Assert.assertEquals("A", data.getHeaders().get(7));
+        assertEquals("Team", data.getHeaders().get(1));
+        assertEquals("F", data.getHeaders().get(6));
+        assertEquals("A", data.getHeaders().get(7));
     }
 
     @Test
     public void testFirstRowContent() {
-        Assert.assertEquals("Arsenal", data.getRawData().get(0).get("Team"));
-        Assert.assertEquals("79", data.getRawData().get(0).get("F"));
-        Assert.assertEquals("36", data.getRawData().get(0).get("A"));
+        assertEquals("Arsenal", data.getRawData().get(0).get("Team"));
+        assertEquals("79", data.getRawData().get(0).get("F"));
+        assertEquals("36", data.getRawData().get(0).get("A"));
     }
 
     @Test

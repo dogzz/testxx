@@ -1,18 +1,9 @@
-package com.company.kata04.datamunging;
+package com.company.kata.k04datamunging;
 
-import com.company.kata04.datamunging.WeatherData;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/*
-* Copyright Medtronic, Inc. 2014-2015
-*
-* MEDTRONIC CONFIDENTIAL - This document is the property of Medtronic,
-* Inc.,and must be accounted for. Information herein is confidential. Do
-* not reproduce it, reveal it to unauthorized persons, or send it outside
-* Medtronic without proper authorization.
-*/
 public class WeatherDataTest {
     WeatherData data;
 

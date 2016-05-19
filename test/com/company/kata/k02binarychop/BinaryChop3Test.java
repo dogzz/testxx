@@ -1,20 +1,11 @@
-package com.company;
+package com.company.kata.k02binarychop;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.company.BinaryChop2.chop;
-import static org.junit.Assert.*;
+import static com.company.kata.k02binarychop.BinaryChop3.chop;
 
-/*
-* Copyright Medtronic, Inc. 2014-2015
-*
-* MEDTRONIC CONFIDENTIAL - This document is the property of Medtronic,
-* Inc.,and must be accounted for. Information herein is confidential. Do
-* not reproduce it, reveal it to unauthorized persons, or send it outside
-* Medtronic without proper authorization.
-*/
-public class BinaryChop2Test {
+public class BinaryChop3Test {
 
     @Test
     public void testChop() throws Exception {
