@@ -1,9 +1,6 @@
 package com.company.kata.k05bloomfilter;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -22,7 +19,8 @@ public class SpellCheck {
             md = MessageDigest.getInstance("MD5");
             linesCount = 400000; //(int) reader.lines().count();
             vector = generateBitVector(reader);
-        } catch (FileNotFoundException | NoSuchAlgorithmException e) {
+            reader.close();
+        } catch (NoSuchAlgorithmException | IOException e) {
             e.printStackTrace();
         }
     }
