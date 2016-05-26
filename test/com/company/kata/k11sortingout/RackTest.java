@@ -19,6 +19,7 @@ public class RackTest {
     @Before
     public void setUp() throws Exception {
         rack = new Rack();
+
     }
 
     @Test
