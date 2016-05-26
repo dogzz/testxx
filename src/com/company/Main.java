@@ -1,11 +1,17 @@
 package com.company;
 
+import com.company.j8inaction.apples.Apple;
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class Main {
+
+    String prop;
 
 
     public static void main(String[] args) {
@@ -24,6 +30,20 @@ public class Main {
         System.out.println(String.format("Factorial is %.0f", a.fact(-1f)));
 
 
+    }
+
+    public void someMethod(int param1, String param2) {
+        Supplier<String> c1 = String::new;
+        String a1 = c1.get();
+        BiFunction<String, Integer, Apple> c3 = Apple::new;
+        Apple a3 = c3.apply("green", 110);
+        int i = 1;
+        Predicate<String> c = s -> {
+            System.out.println(prop);
+            return true;
+        };
+        i = 2;
+        prop = "2";
     }
 
 
