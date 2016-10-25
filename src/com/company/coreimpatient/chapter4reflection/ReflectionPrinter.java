@@ -1,6 +1,7 @@
 package com.company.coreimpatient.chapter4reflection;
 
 import com.company.coreimpatient.chapter3oop.Car;
+import com.company.coreimpatient.chapter3oop.MegaCar;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -16,7 +17,7 @@ import java.util.function.DoubleFunction;
 public class ReflectionPrinter {
     public static void main(String...args) throws Exception {
         ReflectionPrinter rp = new ReflectionPrinter();
-        Car car = new Car(20);
+        Car car = new MegaCar(20);
 
         System.out.println(rp.reflectionToString(car));
         rp.printMethods("[I");

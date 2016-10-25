@@ -3,11 +3,12 @@ package com.company.coreimpatient.chapter3oop;
 /**
  * Created by afon on 21.08.2016.
  */
-public class Car {
+public abstract class Car {
     private double efficiency;
     private final double origin;
     private double currentPosition = 0;
     private double gas = 0;
+    Integer tst = 5;
 
 
     public Car(double efficiency) {
@@ -31,4 +32,10 @@ public class Car {
     public double getGas() {
         return gas;
     }
+
+    int getResult() {
+        return 1+tst;
+    }
+
+    public abstract void printResult();
 }

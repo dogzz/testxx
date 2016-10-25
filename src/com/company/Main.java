@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.coreimpatient.chapter3oop.Car;
+import com.company.coreimpatient.chapter3oop.MegaCar;
 import com.company.j8inaction.apples.Apple;
 import com.sun.org.apache.xpath.internal.SourceTree;
 
@@ -28,6 +30,8 @@ public class Main {
         D d = a;
         D.prn2();
         System.out.println(String.format("Factorial is %.0f", a.fact(-1f)));
+        Car mCar = new MegaCar(45.1);
+        mCar.printResult();
 
 
     }

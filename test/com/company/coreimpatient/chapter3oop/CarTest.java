@@ -15,7 +15,7 @@ public class CarTest {
 
     @Before
     public void setUp() throws Exception {
-        car = new Car(20);
+        car = new MegaCar(20);
         car.addGas(50);
     }
 
